@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h3>Bài 01: quản lý tuyển sinh</h3>
+
+            <form class="content">
+                <label for="b01-diem-chuan">Điểm chuẩn của hội đồng:</label>
+                <input type="number" id="b01-diem-chuan" placeholder="Nhập điểm chuẩn của hội đồng" step="0.01">
+
+                <label for="b01-diem01">Điểm môn thứ nhất:</label>
+                <input type="number" id="b01-diem01" placeholder="Nhập điểm môn thứ nhất" step="0.01">
+
+                <label for="b01-diem02">Điểm môn thứ hai:</label>
+                <input type="number" id="b01-diem02" placeholder="Nhập điểm môn thứ hai" step="0.01">
+
+                <label for="b01-diem03">Điểm môn thứ ba:</label>
+                <input type="number" id="b01-diem03" placeholder="Nhập điểm môn thứ ba" step="0.01">
+
+                <label for="b01-khu-vuc">Khu vực ưu tiên:</label>
+                <select name="khu-vuc-ut" id="b01-khu-vuc">
+                    <option value="X" selected>Khu vực X</option>
+                    <option value="A">Khu vực A</option>
+                    <option value="B" >Khu vực B</option>
+                    <option value="C">Khu vực C</option>
+                </select>
+
+                <label for="b01-doi-tuong">Đối tượng dự thi:</label>
+                <select name="doi-tuong-ut" id="b01-doi-tuong">
+                    <option value="0" selected>Đối tượng 0</option>
+                    <option value="1">Đối tượng 1</option>
+                    <option value="2">Đối tượng 2</option>
+                    <option value="3" >Đối tượng 3</option>
+                </select>
+
+                <button type="submit" class="btn btn-outline-success" id="btn_score">Tính điểm</button>
+            </form>
+
+            <div class="result">
+                <p>Kết quả: <span id="value-rs1"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3>Bài 02: tính tiền điện</h3>
+
+            <form class="content">
+                <label for="b02-ho-ten">Tên khách hàng:</label>
+                <input type="text" id="b02-ho-ten" placeholder="Nhập tên khách hàng">
+
+                <label for="b02-so-kw">Số kw điện:</label>
+                <input type="number" id="b02-so-kw" placeholder="Nhập số kw">
+
+                <button type="submit" class="btn btn-outline-success" id="btn_fee">Tính tiền điện</button>
+            </form>
+
+            <div class="result">
+                <p>Kết quả: <span id="value-rs2"></span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"
+        integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

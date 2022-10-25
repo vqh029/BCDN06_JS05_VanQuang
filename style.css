@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius:8px;
+}
+
+input, select{
+    display: block;
+    max-width: 240px;
+    padding: 10px 16px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #96fbc4;
+}
+
+input[type="radio"]{
+    display: inline-block;
+}
+
+input[type="select"]{
+
+}
+
+.result{
+    margin-top: 20px;
+}
+
+.result span{
+    color: darksalmon;
+}
